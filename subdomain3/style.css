@@ -1,6 +1,22 @@
 /*body { 
     background-image: url(img/solar-system-11188_1280.jpg);
 }*/
+html {
+  scroll-behavior: smooth;
+}
+
+#map {
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .currentAPODC {
     width: 33%;

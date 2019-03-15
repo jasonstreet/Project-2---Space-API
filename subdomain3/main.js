@@ -1,6 +1,5 @@
 // --THE FOLLOWING CODE IS ONLY FOR APOD - ASTRONOMY PICTURE OF THE DAY -- //
 
-
 // My Global Variables
 
 var currentAPOD; // Astronomy Picture of the day - current day
@@ -42,23 +41,7 @@ function loadMyDataAPOD() {
 
 
 
-
-
-
 // --END OF APOD-- //
-
-
-
-
-
-
-
-// ----------------------------------------------------------------------- //
-
-
-
-
-
 
 
 // --THE FOLLOWING CODE IS ONLY FOR ISS - International Space Station -- //
@@ -72,6 +55,8 @@ var myDataISS; // All data requested by API - ISS only.
 
 // My Event listeners
 
+
+
 var getISS = document.getElementById("showISS").addEventListener("click", loadMyDataISS, false);
 
 
@@ -79,6 +64,8 @@ var getISS = document.getElementById("showISS").addEventListener("click", loadMy
 
 
 function loadMyDataISS() {
+    
+
 
     var myRequest = new XMLHttpRequest();
     
@@ -95,6 +82,17 @@ function loadMyDataISS() {
             document.getElementById("longitudeISS").innerHTML = myDataISS.longitude;
             document.getElementById("latitudeISS").innerHTML = myDataISS.latitude;
             document.getElementById("currentVelocityISS").innerHTML = myDataISS.velocity;
+            document.getElementById('map').style.display = 'block';
+            var mapProp= {
+              center:new google.maps.LatLng(myDataISS.latitude,myDataISS.longitude),
+              zoom: 4,
+            };
+            var map = new google.maps.Map(document.getElementById("map"),mapProp);  
+            var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(myDataISS.latitude, myDataISS.longitude),
+            map: map,
+            });  
+                       
             
         }
     
@@ -106,17 +104,8 @@ function loadMyDataISS() {
 
 
 
-
-
-
 // --END OF ISS-- //
 
-
-
-
-
-
-// ----------------------------------------------------------------------- //
 
 var stars = document.querySelectorAll('.animated-card .animated .stars div'),
     planets = document.querySelectorAll('.animated-card .animated .planet'),
