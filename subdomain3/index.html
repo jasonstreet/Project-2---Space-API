@@ -9,8 +9,8 @@
         Planetarium!
     </title>
 </head>
-<body>
-
+<body id="top">
+<div id="map"></div>
 <div class="animated-card">
   <div class="header">
     <div class="animated">
@@ -114,11 +114,14 @@
         <p id="latitudeISS"></p>
         <br>
         <h3>Current Velocity:</h3>
-        <p id="currentVelocityISS"></p>  
+        <p id="currentVelocityISS"></p>
+        <br>
+        <button Class="btn-grad" id="showMapISS"><a id="link" href="#top">See the ISS on google Maps!</a></button>
+        <br>
     </div></span>
   </div>
-</div>     
-
+</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIb7UpbudWJvcd47tfc1w4z7vAib0rPOg&callback=initMap" async defer></script>
     <script src="main.js"></script>
 </body>
 </html>
