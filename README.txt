@@ -4,7 +4,7 @@ Project 2 - Space Themed API
 
 The project has been deployed on  Github:
 
-https://cook-book-flask-mongo.herokuapp.com/
+
 
 ------------------------------------------BRIEFING------------------------------------------
 
