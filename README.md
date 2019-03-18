@@ -37,13 +37,10 @@ When creating this application, there were a few goals that I wanted to achieve.
 
 I wanted to create an easy to use application that was able to do something unique and interesting. I think I ahve achieved that by using the API's provided by Google and NASA. The API's let users see pictures take by space telescopes and see where the International Space Station is, relative to earth. I think that is an interesting concept, and it is easily accessibl due to it's speed and ease of use. The user itnerface sleek and seperated, so that each API is seperated and easy to see. The application can be navigation on any size window. The contrast between the background and the foreground where the information is displayed means that the data given can be easily read.
 
-### And coding style tests
+The Web page and data are also quick to load, and the animations are smooth and don't suffer any lag or low FPS. The data from the API's loads quickly, and the loaded elements don't distrupt the responsiveness of the page. This means that any new elements that come in don't shove other elements out of place. 
 
-Explain what these tests test and why
+Originally I didn't have the Google Maps API in place, however it was pointed out to me that users might want to have a bit more perspetive, as the ISS API gave coordinates, but it was hard for users to know the exact location of the ISS without having to copy and paste the coordinates into Google Maps. With the addition of the Google maps API, this is now done automatically for the user if they request it, without loading any new windows or tabs and without any long loading times.
 
-```
-Give an example
-```
 
 ## Built With
 
