@@ -17,6 +17,7 @@ To test the NASA API's, I created a basic function that called data from NASA's 
 To test the Google Maps API, I created a test function that held hard coded data in. When the function was run, the map displayed hard coded coordinates. When I had the API and the Map module working with the hard coded data, I was able to replace the values with the variables that held the ISS coordinates, so that when the function was run, it would pull through the variable instead of a hard oed value.
 
 I tested HTML, CSS and Responiveness on different browsers, by resizing the window. I also run all the functions on the page with the re-sized window and it worked as normal, with the Map module taking up the screen when being viewed, and the space widget being centered in the middle of the screen and the background image loading as it should.
+
 ### Break down into end to end tests
 
 Explain what these tests test and why
@@ -33,36 +34,20 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* CSS3
+* HTML5
+* JavaScript
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jason Street** - *For Code Institute*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* NASA (For ISS Coordinates API and Picture of the Day API)
+* Google (For images and maps API)
+* CodePen (For animations and illustrations)
