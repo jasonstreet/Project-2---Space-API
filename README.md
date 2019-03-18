@@ -8,6 +8,8 @@ This project has already been deployed at https://jasonstreet.github.io/Project-
 
 You can also deploy it locally yourself by downloading this project, then opening as a project in your chosen IDE. This project has been tested in Brackets and Notepad++ and should work in other IDE's. To install in Brackets, right click the master folder, and select "Open as Brackets Project".
 
+Due to Changes in 
+
 ## Testing
 
 I have tested this project in Brackets and Notepad++ and in Internet Explorer, Vivaldi, Google Chrome and FireFox. All of these Browsers were able to handle the project without any difficulties or errors.
