@@ -36,34 +36,20 @@ function loadMyDataAPOD() {
     myRequest.send();
 
 }
-
-
-
 // --END OF APOD-- //
-
-
 // --THE FOLLOWING CODE IS ONLY FOR ISS - International Space Station -- //
 
-
 // My Global Variables
-
 var myISS; // International Space Station location.
 var myDataISS; // All data requested by API - ISS only.
 
-
 // My Event listeners
-
-
 
 var getISS = document.getElementById("showISS").addEventListener("click", loadMyDataISS, false);
 
-
 // End of event listeners
 
-
 function loadMyDataISS() {
-
-
 
     var myRequest = new XMLHttpRequest();
 
@@ -98,9 +84,6 @@ function loadMyDataISS() {
     myRequest.send();
 
 }
-
-
-
 
 // --END OF ISS-- //
 
