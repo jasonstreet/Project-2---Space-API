@@ -2,7 +2,7 @@
 
 This is a space-themed project that uses API's from NASA and Google, along with HTML, CSS and Javascript.
 
-## Getting Started
+## Deployment
 
 This project has already been deployed at https://jasonstreet.github.io/Project-2---Space-API/#top
 
