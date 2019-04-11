@@ -6,6 +6,14 @@ This is a space-themed project that uses API's from NASA and Google, along with 
 
 This project has already been deployed at https://jasonstreet.github.io/Project-2---Space-API/#top
 
+In order to deploy this to Github pages I did the following:
+1. Test local functionality for bugs
+2. Commit all relevant files to GitHub
+3. Enter settings in GitHub
+4. Navigate to GitHub pages and click deploy
+
+No other requirements are needed as this website is quite simple, so it can be easily deployed through GitHub.
+
 You can also deploy it locally yourself by downloading this project, then open as a project in your chosen IDE. This project has been tested in Brackets and Notepad++ and should work in other IDE's. To install in Brackets, right-click the master folder, and select "Open as Brackets Project".
 
 Due to Changes in Google policy to longer offer Google Maps API to developers completely free of charge, the map in this application has a watermark. This is due to the fact that I used a free developer version for this project, and this is not an error as a result of the code or the user.
@@ -41,6 +49,9 @@ The Web page and data are also quick to load, and the animations are smooth and 
 
 Originally I didn't have the Google Maps API in place, however it was pointed out to me that users might want to have a bit more perspective, as the ISS API gave coordinates, but it was hard for users to know the exact location of the ISS without having to copy and paste the coordinates into Google Maps. With the addition of the Google maps API, this is now done automatically for the user if they request it, without loading any new windows or tabs and without any long loading times.
 
+### Improvements
+
+If I were to recreate this website in the future, with improved skills, I think I would take a look at improving the Javascript for the animations. Currently the individual elements have their own divs, which means they are static in their position. Using JQuery, the need for these divs could be elimnated, thus tidying up the code and making it more readable and lighter. Jquery might also allow the position of certain elements to be randomized. I think in the future I might also include more API's from NASA, as they have quite a few, so integrating more API's to create a more feature rich website could be a good idea.
 
 ## Built With
 
@@ -48,11 +59,9 @@ Originally I didn't have the Google Maps API in place, however it was pointed ou
 * HTML5
 * JavaScript
 
-
 ## Authors
 
 * **Jason Street** - *For Code Institute*
-
 
 ## Acknowledgments
 
