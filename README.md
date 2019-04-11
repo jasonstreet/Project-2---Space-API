@@ -53,6 +53,8 @@ Originally I didn't have the Google Maps API in place, however it was pointed ou
 
 If I were to recreate this website in the future, with improved skills, I think I would take a look at improving the Javascript for the animations. Currently the individual elements have their own divs, which means they are static in their position. Using JQuery, the need for these divs could be elimnated, thus tidying up the code and making it more readable and lighter. Jquery might also allow the position of certain elements to be randomized. I think in the future I might also include more API's from NASA, as they have quite a few, so integrating more API's to create a more feature rich website could be a good idea.
 
+Additionally I could implement some kind of error system if the API fails. The NASA API has been very reliable during production, however if , for whatever reason, they discontinue the API, or it fails on their end, having some kind of error message would be useful feedback to the user.
+
 ## Built With
 
 * CSS3
