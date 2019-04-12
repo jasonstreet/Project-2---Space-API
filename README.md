@@ -35,6 +35,21 @@ To test the NASA API's, I created a basic function that called data from NASA's 
 
 The data came in a JSON format, and I was able to test different parameters to get the data I needed. I have created separate functions to pull the Picture of the Day and the ISS Coordinates. This allowed me to test pulling the data for each API, rather than having to test them both at once.
 
+I have also included extra error code responses, for additional user feedback. I used these responses to test certain errors when I was initially trying to load the data in my application.
+
+```
+        else if (myRequest.readyState === 4 && myRequest.status === 404){
+            window.alert("404 Not Found. Please try again later.");
+        }
+        else if (myRequest.readyState === 4 && myRequest.status === 500){
+            window.alert("500 Internal Server Error. Please try again later.")
+        }
+        else{
+            window.alert("Unknown error. Please try again later.")
+        }
+
+```
+
 To test the Google Maps API, I created a test function that held hard-coded data. When the function was run, the map displayed hard-coded coordinates. When I had the API and the Map module working with the hard-coded data, I was able to replace the values with the variables that held the ISS coordinates, so that when the function was run, it would pull through the variable instead of a hard-coded value.
 
 I tested HTML, CSS and Responsiveness on different browsers, by resizing the window. I also run all the functions on the page with the re-sized window and it worked as normal, with the Map module taking up the screen when being viewed, and the space widget being centred in the middle of the screen and the background image loading as it should.
