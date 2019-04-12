@@ -31,6 +31,15 @@ function loadMyDataAPOD() {
             document.getElementById("currentAPOD").innerHTML = '<img src="' + myDataAPOD.url + '"width="auto" height="auto" alt="Image of the day">';
             //document.getElementById("myImages").src= myData.url;  //Alternative method of dynamic images. Requires proper IMG tagging in paired HTML Doc.
         }
+        else if (myRequest.readyState === 4 && myRequest.status === 404){
+            window.alert("404 Not Found. Please try again later.");
+        }
+        else if (myRequest.readyState === 4 && myRequest.status === 500){
+            window.alert("500 Internal Server Error. Please try again later.")
+        }
+        else{
+            window.alert("Unknown error. Please try again later.")
+        }
 
     };
     myRequest.send();
@@ -76,8 +85,15 @@ function loadMyDataISS() {
                 position: new google.maps.LatLng(myDataISS.latitude, myDataISS.longitude),
                 map: map,
             });
-
-
+        }
+        else if (myRequest.readyState === 4 && myRequest.status === 404){
+            window.alert("404 Not Found. Please try again later.");
+        }
+        else if (myRequest.readyState === 4 && myRequest.status === 500){
+            window.alert("500 Internal Server Error. Please try again later.")
+        }
+        else{
+            window.alert("Unknown error. Please try again later.")
         }
 
     };
